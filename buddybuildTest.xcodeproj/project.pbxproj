@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1B9A258D3175890DFD6B85 /* libPods-buddybuildTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5307D51BB3EB5F5FC752EE03 /* libPods-buddybuildTest.a */; };
 		ED80A12C1C1585710025FF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED80A12B1C1585710025FF86 /* AppDelegate.swift */; };
 		ED80A12E1C1585710025FF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED80A12D1C1585710025FF86 /* ViewController.swift */; };
 		ED80A1311C1585710025FF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED80A12F1C1585710025FF86 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5307D51BB3EB5F5FC752EE03 /* libPods-buddybuildTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-buddybuildTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7637BD9E0AF978BD1FFD9A5E /* Pods-buddybuildTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buddybuildTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-buddybuildTest/Pods-buddybuildTest.release.xcconfig"; sourceTree = "<group>"; };
+		B9D4294D5042E0503D3D0739 /* Pods-buddybuildTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-buddybuildTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-buddybuildTest/Pods-buddybuildTest.debug.xcconfig"; sourceTree = "<group>"; };
 		ED80A1281C1585710025FF86 /* buddybuildTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = buddybuildTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED80A12B1C1585710025FF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED80A12D1C1585710025FF86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		ED80A1321C1585710025FF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED80A1351C1585710025FF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED80A1371C1585710025FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED80A13D1C158AA70025FF86 /* buddybuildTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "buddybuildTest-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1B9A258D3175890DFD6B85 /* libPods-buddybuildTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F3A7DB8B7BB218BD3C5B960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5307D51BB3EB5F5FC752EE03 /* libPods-buddybuildTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA5DCB14B4381BEB96D526D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9D4294D5042E0503D3D0739 /* Pods-buddybuildTest.debug.xcconfig */,
+				7637BD9E0AF978BD1FFD9A5E /* Pods-buddybuildTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED80A11F1C1585710025FF86 = {
 			isa = PBXGroup;
 			children = (
 				ED80A12A1C1585710025FF86 /* buddybuildTest */,
 				ED80A1291C1585710025FF86 /* Products */,
+				DA5DCB14B4381BEB96D526D6 /* Pods */,
+				5F3A7DB8B7BB218BD3C5B960 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +85,7 @@
 				ED80A1321C1585710025FF86 /* Assets.xcassets */,
 				ED80A1341C1585710025FF86 /* LaunchScreen.storyboard */,
 				ED80A1371C1585710025FF86 /* Info.plist */,
+				ED80A13D1C158AA70025FF86 /* buddybuildTest-Bridging-Header.h */,
 			);
 			path = buddybuildTest;
 			sourceTree = "<group>";
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED80A13A1C1585710025FF86 /* Build configuration list for PBXNativeTarget "buddybuildTest" */;
 			buildPhases = (
+				0B10ECF503C4414203255EE7 /* Check Pods Manifest.lock */,
 				ED80A1241C1585710025FF86 /* Sources */,
 				ED80A1251C1585710025FF86 /* Frameworks */,
 				ED80A1261C1585710025FF86 /* Resources */,
+				D238E3EE736F8E65FCE2BB31 /* Embed Pods Frameworks */,
+				E15014F3D93D9CF04ED00E66 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B10ECF503C4414203255EE7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D238E3EE736F8E65FCE2BB31 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buddybuildTest/Pods-buddybuildTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E15014F3D93D9CF04ED00E66 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-buddybuildTest/Pods-buddybuildTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED80A1241C1585710025FF86 /* Sources */ = {
@@ -247,23 +324,30 @@
 		};
 		ED80A13B1C1585710025FF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9D4294D5042E0503D3D0739 /* Pods-buddybuildTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = buddybuildTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.henteko07.buddybuildTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "buddybuildTest/buddybuildTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		ED80A13C1C1585710025FF86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7637BD9E0AF978BD1FFD9A5E /* Pods-buddybuildTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = buddybuildTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.henteko07.buddybuildTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "buddybuildTest/buddybuildTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +370,7 @@
 				ED80A13C1C1585710025FF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
